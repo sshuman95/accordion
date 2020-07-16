@@ -319,9 +319,14 @@ for (let i = 0; i < disclaimers.length; i++) {
     disclaimers[i].onclick = function (event) {
         //remove all active class
         //removeDisclaimer();
+        if(hideDisclaimer[i].classList.contains("activeDisclaimer")){
+            hideDisclaimer[i].classList.remove("activeDisclaimer");
+            disclaimers[i].classList.remove("red");
+        } else {
         removeDisclaimer();
         hideDisclaimer[i].classList.add("activeDisclaimer");
         disclaimers[i].classList.add("red");
+        }
     }
 }
 

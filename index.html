@@ -8,7 +8,7 @@
 <body>
     <section id='acc'>
         <h3>Camry Offers & Incentives</h3>
-        <section class='leaseOffers'>
+        <section class='offers'>
             <div class='container active'>
                 <span class='offerTitle'>Lease Offers</span>
                 <span class='offerTitle arrow'>&#8681;</span>
@@ -57,7 +57,7 @@
             </section>
            
         </section>
-        <section class='aprOffers'>
+        <section class='offers'>
             <div class='container '>
                 <span class='offerTitle'>APR Offers</span>
                 <span class='offerTitle arrow'>&#8681;</span>
@@ -85,7 +85,7 @@
                     </section>
             </section>
         </section>
-        <section class='cashOffers'>
+        <section class='offers'>
             <div class='container '>
                 <span class='offerTitle'>Cash Offers</span>
                 <span class='offerTitle arrow'>&#8681;</span>
@@ -111,6 +111,86 @@
                         </div>
                     </article>
                     </section>
+                    <section class='test'>
+                        <figure class='lifeImg'>
+                            <img  src="https://cdn-ds.com/blogs-media/sites/130/2016/06/18125251/Official-2016-Toyota-Camry-Trim-Levels-and-Prices_o.jpg"
+                                alt="car">
+                        </figure>
+                        <article class='offerDetails'>
+                            <span class='type'>Cash Offer</strong>
+                            <p class='rate'>Starting at $289/month for 36 months - $2,999 due at signing</p>
+                            <p class='model'>New 2020 Camry Hybrid LE</p>
+                            <div class='terms'>
+                                <div class='termDetails'>
+                                  <p>Offer expires on 2020-07-06</p>
+                                  <p>See Offer Details</p>  
+                                </div>
+                                <button>
+                                    Claim Offer
+                                </button>
+                            </div>
+                        </article>
+                        </section>
+                        <section class='test'>
+                            <figure class='lifeImg'>
+                                <img  src="https://cdn-ds.com/blogs-media/sites/130/2016/06/18125251/Official-2016-Toyota-Camry-Trim-Levels-and-Prices_o.jpg"
+                                    alt="car">
+                            </figure>
+                            <article class='offerDetails'>
+                                <span class='type'>Cash Offer</strong>
+                                <p class='rate'>Starting at $289/month for 36 months - $2,999 due at signing</p>
+                                <p class='model'>New 2020 Camry Hybrid LE</p>
+                                <div class='terms'>
+                                    <div class='termDetails'>
+                                      <p>Offer expires on 2020-07-06</p>
+                                      <p>See Offer Details</p>  
+                                    </div>
+                                    <button>
+                                        Claim Offer
+                                    </button>
+                                </div>
+                            </article>
+                            </section>
+                            <section class='test'>
+                                <figure class='lifeImg'>
+                                    <img  src="https://cdn-ds.com/blogs-media/sites/130/2016/06/18125251/Official-2016-Toyota-Camry-Trim-Levels-and-Prices_o.jpg"
+                                        alt="car">
+                                </figure>
+                                <article class='offerDetails'>
+                                    <span class='type'>Cash Offer</strong>
+                                    <p class='rate'>Starting at $289/month for 36 months - $2,999 due at signing</p>
+                                    <p class='model'>New 2020 Camry Hybrid LE</p>
+                                    <div class='terms'>
+                                        <div class='termDetails'>
+                                          <p>Offer expires on 2020-07-06</p>
+                                          <p>See Offer Details</p>  
+                                        </div>
+                                        <button>
+                                            Claim Offer
+                                        </button>
+                                    </div>
+                                </article>
+                                </section>
+                                <section class='test'>
+                                    <figure class='lifeImg'>
+                                        <img  src="https://cdn-ds.com/blogs-media/sites/130/2016/06/18125251/Official-2016-Toyota-Camry-Trim-Levels-and-Prices_o.jpg"
+                                            alt="car">
+                                    </figure>
+                                    <article class='offerDetails'>
+                                        <span class='type'>Cash Offer</strong>
+                                        <p class='rate'>Starting at $289/month for 36 months - $2,999 due at signing</p>
+                                        <p class='model'>New 2020 Camry Hybrid LE</p>
+                                        <div class='terms'>
+                                            <div class='termDetails'>
+                                              <p>Offer expires on 2020-07-06</p>
+                                              <p>See Offer Details</p>  
+                                            </div>
+                                            <button>
+                                                Claim Offer
+                                            </button>
+                                        </div>
+                                    </article>
+                                    </section>
             </section>
         </section>
     </section>
@@ -123,6 +203,7 @@
             if(target.classList.contains('active')){
             target.classList.toggle("active");
             let offer = target.nextSibling.nextSibling;
+            console.log(offer)
             offer.style.height = '0';
             } else{
                 target.classList.toggle("active");

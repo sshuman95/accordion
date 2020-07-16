@@ -10,12 +10,11 @@ html,body{
 }
 
 .offers{
-    
+    box-shadow: 0px 0px 4px 0px grey;
     display:flex;
     flex-direction: column;
     width:75%;
     margin:5px auto;
-    box-shadow: 0px 0px 4px 0px grey;
 }
 
 .leaseOffers{
@@ -173,7 +172,7 @@ html,body{
     cursor: pointer;
 }
 
-.test{
+.main{
     display:flex;
     background-color: white;
     width:95%;
@@ -202,7 +201,7 @@ html,body{
 }
 
 @media only screen and (max-width: 800px) {
-        .test{
+        .main{
             flex-direction: column;
             align-items: center;
         }

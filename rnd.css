@@ -187,6 +187,20 @@ html,body{
     display:none;
 }
 
+.activeDisclaimer{
+    display:flex;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.disLink{
+    cursor: pointer;
+}
+
+.red{
+    color:red;
+}
+
 @media only screen and (max-width: 800px) {
         .test{
             flex-direction: column;

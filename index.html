@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="rnd.css">
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+
+<body>
+    <section id='acc'>
+        <h3>Camry Offers & Incentives</h3>
+        <section class='leaseOffers'>
+            <div class='container active'>
+                <span class='offerTitle'>Lease Offers</span>
+                <span class='offerTitle arrow'>&#8681;</span>
+            </div>
+            <section class='lOffer'>
+                <section class='test'>
+                    <figure class='lifeImg'>
+                        <img  src="https://cdn-ds.com/blogs-media/sites/130/2016/06/18125251/Official-2016-Toyota-Camry-Trim-Levels-and-Prices_o.jpg"
+                            alt="car">
+                    </figure>
+                    <article class='offerDetails'>
+                        <span class='type'>Lease Offer</strong>
+                        <p class='rate'>Starting at $289/month for 36 months - $2,999 due at signing</p>
+                        <p class='model'>New 2020 Camry Hybrid LE</p>
+                        <div class='terms'>
+                            <div class='termDetails'>
+                              <p>Offer expires on 2020-07-06</p>
+                              <p>See Offer Details</p>  
+                            </div>
+                            <button>
+                                Claim Offer
+                            </button>
+                        </div>
+                    </article>
+                </section>
+                <section class='test'>
+                    <figure class='lifeImg'>
+                        <img  src="https://cdn-ds.com/blogs-media/sites/130/2016/06/18125251/Official-2016-Toyota-Camry-Trim-Levels-and-Prices_o.jpg"
+                            alt="car">
+                    </figure>
+                    <article class='offerDetails'>
+                        <span class='type'>Lease Offer</strong>
+                        <p class='rate'>Starting at $289/month for 36 months - $2,999 due at signing</p>
+                        <p class='model'>New 2020 Camry Hybrid LE</p>
+                        <div class='terms'>
+                            <div class='termDetails'>
+                              <p>Offer expires on 2020-07-06</p>
+                              <p>See Offer Details</p>  
+                            </div>
+                            <button>
+                                Claim Offer
+                            </button>
+                        </div>
+                    </article>
+                </section>
+            </section>
+           
+        </section>
+        <section class='aprOffers'>
+            <div class='container '>
+                <span class='offerTitle'>APR Offers</span>
+                <span class='offerTitle arrow'>&#8681;</span>
+            </div>
+            <section class='aOffer'>
+                <section class='test'>
+                    <figure class='lifeImg'>
+                        <img  src="https://cdn-ds.com/blogs-media/sites/130/2016/06/18125251/Official-2016-Toyota-Camry-Trim-Levels-and-Prices_o.jpg"
+                            alt="car">
+                    </figure>
+                    <article class='offerDetails'>
+                        <span class='type'>APR Offer</strong>
+                        <p class='rate'>Starting at $289/month for 36 months - $2,999 due at signing</p>
+                        <p class='model'>New 2020 Camry Hybrid LE</p>
+                        <div class='terms'>
+                            <div class='termDetails'>
+                              <p>Offer expires on 2020-07-06</p>
+                              <p>See Offer Details</p>  
+                            </div>
+                            <button>
+                                Claim Offer
+                            </button>
+                        </div>
+                    </article>
+                    </section>
+            </section>
+        </section>
+        <section class='cashOffers'>
+            <div class='container '>
+                <span class='offerTitle'>Cash Offers</span>
+                <span class='offerTitle arrow'>&#8681;</span>
+            </div>
+            <section class='cOffer'>
+                <section class='test'>
+                    <figure class='lifeImg'>
+                        <img  src="https://cdn-ds.com/blogs-media/sites/130/2016/06/18125251/Official-2016-Toyota-Camry-Trim-Levels-and-Prices_o.jpg"
+                            alt="car">
+                    </figure>
+                    <article class='offerDetails'>
+                        <span class='type'>Cash Offer</strong>
+                        <p class='rate'>Starting at $289/month for 36 months - $2,999 due at signing</p>
+                        <p class='model'>New 2020 Camry Hybrid LE</p>
+                        <div class='terms'>
+                            <div class='termDetails'>
+                              <p>Offer expires on 2020-07-06</p>
+                              <p>See Offer Details</p>  
+                            </div>
+                            <button>
+                                Claim Offer
+                            </button>
+                        </div>
+                    </article>
+                    </section>
+            </section>
+        </section>
+    </section>
+</body>
+<script>
+    let arrow = document.getElementsByClassName('container');
+    for (let i = 0; i<arrow.length; i++){
+        arrow[i].addEventListener("click", function() {
+            let target = this;
+            if(target.classList.contains('active')){
+            target.classList.toggle("active");
+            let offer = target.nextSibling.nextSibling;
+            offer.style.height = '0';
+            } else{
+                target.classList.toggle("active");
+                let offer = target.nextSibling.nextSibling;
+                offer.style.height = 'auto';
+            }
+    });
+    }
+
+
+
+/*
+        let panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+        } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        }*/
+</script>
+</html>

@@ -1,0 +1,186 @@
+html,body{
+    padding:0;
+    margin:0;
+    font-family:Roboto, 'Segoe UI', Tahoma, sans-serif;
+}
+
+#acc h3{
+    margin:15px auto;
+    width:75%;
+}
+
+.leaseOffers{
+    
+    display:flex;
+    flex-direction: column;
+    width:75%;
+    margin:0 auto;
+    box-shadow: 0px 0px 4px 0px grey;
+}
+
+
+.aprOffers{
+    display:flex;
+    flex-direction: column;
+    width:75%;
+    margin:5px auto;
+    box-shadow: 0px 0px 4px 0px grey;
+}
+
+.cashOffers{
+    display:flex;
+    flex-direction: column;
+    width:75%;
+    margin:5px auto;
+    box-shadow: 0px 0px 4px 0px grey;
+}
+
+.container{
+    background-color: white;
+    min-height:3em;
+    display: flex;
+    align-items: center;
+}
+
+.offerTitle{
+    width:100%;
+    margin-block-start: .6em;
+    margin-block-end: .6em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+    font-size: 1.2em;
+    cursor: pointer;
+   
+}
+
+.active{
+    color:white;
+    background-color: red;
+}
+
+.arrow{
+    text-align: right;
+    font-size: 1.5em;
+}
+
+
+.lOffer{
+    display:flex; 
+    flex-direction: column;
+    background-color: cornsilk;
+    height:auto;
+    overflow: hidden;
+}
+
+.aOffer{
+        display:flex; 
+        background-color: cornsilk;
+        height:0px;
+        overflow: hidden;
+        flex-direction: column;
+}
+
+
+.cOffer{
+    display:flex; 
+    background-color: cornsilk;
+    height:0px;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+
+.lifeImg{
+    width:40%;
+    margin-right:0;
+    
+}
+
+.lifeImg img{
+    width:100%;
+}
+.offerDetails{
+    padding:10px;
+    text-align: left;
+    width:55%;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+    margin-left:0;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.type{
+    font-weight: 500;
+}
+
+.rate{
+    font-weight: bolder;
+    font-size: 1.5em;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.model{
+    margin-top:5px;
+}
+
+.terms{
+    display: flex;
+    justify-content: space-between;
+    height:auto;
+    align-self: flex-end;
+    height:20%;
+}
+
+.termDetails{
+    align-self: flex-end;
+}
+
+.terms p{
+    margin-top:0;
+    margin-bottom:0;
+    font-weight: normal;
+    font-size:.5em;
+}
+
+.terms button{
+    align-self: flex-end;
+    width:30%;
+    height:70%;
+    background-color: red;
+    border-radius:7px;
+    border:none;
+    color:white;
+    padding-top:5px;
+    padding-bottom:5px;
+    cursor: pointer;
+}
+
+.test{
+    display:flex;
+    background-color: white;
+    width:95%;
+    margin:15px auto;
+    box-shadow: 0px 0px 4px 0px grey;
+}
+
+@media only screen and (max-width: 800px) {
+        .test{
+            flex-direction: column;
+            align-items: center;
+        }
+        .lifeImg{
+            width:80%;
+            margin-right:0;
+            margin-left:0;
+        }
+
+        .offerDetails{
+            width: 80%;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+  }

@@ -79,14 +79,14 @@ html,body{
 .lOffer{
     display:flex; 
     flex-direction: column;
-    background-color: cornsilk;
+    background-color: rgba(255,248,220 ,.3 );
     height:auto;
     overflow: hidden;
 }
 
 .aOffer{
         display:flex; 
-        background-color: cornsilk;
+        background-color: rgba(255,248,220 ,.3 );
         height:0px;
         overflow: hidden;
         flex-direction: column;
@@ -95,7 +95,7 @@ html,body{
 
 .cOffer{
     display:flex; 
-    background-color: cornsilk;
+    background-color: rgba(255,248,220 ,.3 );
     height:0px;
     overflow: hidden;
     flex-direction: column;
@@ -112,7 +112,7 @@ html,body{
     width:100%;
 }
 .offerDetails{
-    padding:10px;
+    padding:0 10px;
     text-align: left;
     width:55%;
     margin-block-start: 1em;
@@ -121,7 +121,8 @@ html,body{
     margin-inline-end: 40px;
     margin-left:0;
     display:flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+
 }
 
 .type{
@@ -131,8 +132,8 @@ html,body{
 .rate{
     font-weight: bolder;
     font-size: 1.5em;
-    margin-top:10px;
-    margin-bottom:10px;
+    margin-top:0px;
+    margin-bottom:0px;
 }
 
 .model{
@@ -142,9 +143,10 @@ html,body{
 .terms{
     display: flex;
     justify-content: space-between;
-    height:auto;
+
     align-self: flex-end;
-    height:20%;
+    height:35%;
+    width: 100%;
 }
 
 .termDetails{
@@ -161,7 +163,7 @@ html,body{
 .terms button{
     align-self: flex-end;
     width:30%;
-    height:70%;
+    height:auto;
     background-color: red;
     border-radius:7px;
     border:none;
@@ -177,6 +179,12 @@ html,body{
     width:95%;
     margin:15px auto;
     box-shadow: 0px 0px 4px 0px grey;
+}
+
+.disclaimer{
+    font-size: 10px;
+    font-weight: normal;
+    display:none;
 }
 
 @media only screen and (max-width: 800px) {
